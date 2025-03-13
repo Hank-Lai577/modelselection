@@ -1,11 +1,11 @@
 # modelselection
-PPG Signal Plotting Script
+## PPG Signal Plotting Script
 
-Overview
+# Overview
 
 This script loads PPG signal data from text files, segments it into clips, and plots them using Matplotlib.
 
-Requirements
+# Requirements
 
 Python 3.x
 
@@ -15,7 +15,7 @@ numpy
 
 os
 
-Usage
+# Usage
 
 Place PPG text files in ./temp1.
 
@@ -23,7 +23,7 @@ Run the script: python script.py.
 
 Plots will be displayed, one clip at a time (default: 3000 samples per clip).
 
-Features
+# Features
 
 Reads PPG signal data from text files.
 
@@ -31,7 +31,7 @@ Splits data into fixed-length segments (default: 3000 samples).
 
 Plots each segment separately.
 
-Enhancements
+# Enhancements
 
 Save plots as images.
 
