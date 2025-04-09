@@ -18,10 +18,10 @@ half_N = N // 2
 freqs = freqs[:half_N]
 fft_magnitude = np.abs(fft_result[:half_N])
 
-positive_freqs = freqs > 0  # 過濾出 freq > 0 的索引
-peak_index = np.argmax(fft_magnitude[positive_freqs])  # 找到最大值的索引
-peak_freq = freqs[positive_freqs][peak_index]  # 最大值對應的頻率
-peak_value = fft_magnitude[positive_freqs][peak_index]  # 最大值的振幅
+positive_freqs = freqs > 0  # only pick positive side
+peak_index = np.argmax(fft_magnitude[positive_freqs])  # find the maximum location
+peak_freq = freqs[positive_freqs][peak_index]  # maximum frequence
+peak_value = fft_magnitude[positive_freqs][peak_index]  # Maximum magnitude
 
 
 # set figure size
